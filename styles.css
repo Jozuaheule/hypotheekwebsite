@@ -647,57 +647,105 @@ header {
     color: var(--text-medium);
 }
 
-/* Contact Form */
-.contact-container {
-    max-width: 800px;
-    margin: 0 auto;
+/* Bank Links in Comparison Table */
+.bank-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    color: var(--primary-color);
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    background-color: var(--bg-light);
+    transition: var(--transition);
+    white-space: nowrap;
 }
 
-.contact-form {
-    background-color: var(--bg-white);
-    padding: var(--spacing-lg);
-    border-radius: 8px;
-    box-shadow: var(--shadow-md);
+.bank-link:hover {
+    background-color: var(--primary-color);
+    color: var(--bg-white);
+    transform: translateX(2px);
 }
 
-.form-row {
+/* Resources & References Section */
+.resources-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: var(--spacing-sm);
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-md);
 }
 
-.checkbox-group label {
+.resource-card {
+    background-color: var(--bg-white);
+    padding: var(--spacing-md);
+    border-radius: 8px;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+}
+
+.resource-card:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
+}
+
+.resource-card h3 {
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-sm);
+    padding-bottom: var(--spacing-sm);
+    border-bottom: 2px solid var(--bg-light);
+    font-size: 1.25rem;
+}
+
+.resource-list {
+    list-style: none;
+    padding: 0;
+}
+
+.resource-list li {
+    margin-bottom: var(--spacing-sm);
+    padding-bottom: var(--spacing-sm);
+    border-bottom: 1px solid var(--bg-light);
+}
+
+.resource-list li:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.resource-list a {
     display: flex;
     align-items: flex-start;
+    justify-content: space-between;
     gap: 0.5rem;
-    font-weight: normal;
-    cursor: pointer;
+    color: var(--primary-color);
+    font-weight: 600;
+    text-decoration: none;
+    transition: var(--transition);
+    margin-bottom: 0.25rem;
 }
 
-.checkbox-group input[type="checkbox"] {
-    width: auto;
-    margin-top: 0.25rem;
+.resource-list a:hover {
+    color: var(--secondary-color);
 }
 
-.form-message {
-    margin-top: var(--spacing-sm);
-    padding: var(--spacing-sm);
-    border-radius: 4px;
-    display: none;
+.resource-list a:hover .external-icon {
+    transform: translate(2px, -2px);
 }
 
-.form-message.success {
-    background-color: #d4edda;
-    color: #155724;
-    border: 1px solid #c3e6cb;
-    display: block;
+.external-icon {
+    display: inline-block;
+    font-size: 1.25rem;
+    font-weight: bold;
+    transition: transform 0.2s ease;
+    flex-shrink: 0;
 }
 
-.form-message.error {
-    background-color: #f8d7da;
-    color: #721c24;
-    border: 1px solid #f5c6cb;
-    display: block;
+.resource-list p {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    margin: 0;
+    line-height: 1.4;
 }
 
 /* Footer */

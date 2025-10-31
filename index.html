@@ -1,6 +1,18 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        // Replace 'G-XXXXXXXXXX' with your actual Google Analytics Measurement ID
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
+    <!-- End Google Analytics -->
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Hypotheekdelen.nl - Ontdek hoe hypotheekdelen werkt, welke banken het aanbieden en welke alternatieven er zijn.">
@@ -22,7 +34,7 @@
                     <li><a href="#alternatieven">Alternatieven</a></li>
                     <li><a href="#calculator">Calculator</a></li>
                     <li><a href="#faq">FAQ</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#bronnen">Bronnen</a></li>
                 </ul>
                 <div class="hamburger">
                     <span></span>
@@ -112,6 +124,7 @@
                             <th>Familieband Vereist</th>
                             <th>Max. Aantal Deelnemers</th>
                             <th>Bijzonderheden</th>
+                            <th>Website</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -120,30 +133,35 @@
                             <td data-label="Familieband Vereist">Ja</td>
                             <td data-label="Max. Aantal Deelnemers">4</td>
                             <td data-label="Bijzonderheden">Ouders en (schoon)kinderen, broers/zussen. Minimaal 18 jaar.</td>
+                            <td data-label="Website"><a href="https://www.rabobank.nl/particulieren/hypotheek" target="_blank" rel="noopener noreferrer" class="bank-link">Bezoek website →</a></td>
                         </tr>
                         <tr>
                             <td data-label="Bank"><strong>ABN AMRO</strong></td>
                             <td data-label="Familieband Vereist">Ja</td>
                             <td data-label="Max. Aantal Deelnemers">4</td>
                             <td data-label="Bijzonderheden">Eerste graads familieleden. Goede onderbouwing vereist.</td>
+                            <td data-label="Website"><a href="https://www.abnamro.nl/nl/prive/hypotheken/" target="_blank" rel="noopener noreferrer" class="bank-link">Bezoek website →</a></td>
                         </tr>
                         <tr>
                             <td data-label="Bank"><strong>ING</strong></td>
                             <td data-label="Familieband Vereist">Ja</td>
                             <td data-label="Max. Aantal Deelnemers">3-4</td>
                             <td data-label="Bijzonderheden">Familie of duurzame relatie. Per geval beoordeeld.</td>
+                            <td data-label="Website"><a href="https://www.ing.nl/particulier/hypotheek/" target="_blank" rel="noopener noreferrer" class="bank-link">Bezoek website →</a></td>
                         </tr>
                         <tr>
                             <td data-label="Bank"><strong>Obvion</strong></td>
                             <td data-label="Familieband Vereist">Nee*</td>
                             <td data-label="Max. Aantal Deelnemers">4</td>
                             <td data-label="Bijzonderheden">*Ook vrienden mogelijk onder voorwaarden. Flexibele aanpak.</td>
+                            <td data-label="Website"><a href="https://www.obvion.nl/" target="_blank" rel="noopener noreferrer" class="bank-link">Bezoek website →</a></td>
                         </tr>
                         <tr>
                             <td data-label="Bank"><strong>Florius</strong></td>
                             <td data-label="Familieband Vereist">Ja</td>
                             <td data-label="Max. Aantal Deelnemers">4</td>
                             <td data-label="Bijzonderheden">Eerste en tweede graads familie. Duurzame relatie verplicht.</td>
+                            <td data-label="Website"><a href="https://www.florius.nl/" target="_blank" rel="noopener noreferrer" class="bank-link">Bezoek website →</a></td>
                         </tr>
                     </tbody>
                 </table>
@@ -248,33 +266,6 @@
                             </ul>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Deelhuys Recommendation -->
-    <section class="section deelhuys-section">
-        <div class="container">
-            <div class="recommendation-box">
-                <div class="recommendation-content">
-                    <h2>Op zoek naar deskundig advies?</h2>
-                    <p>Voor uitgebreide informatie en professionele begeleiding bij familiehypotheken raden wij <strong>Deelhuys</strong> aan. Deelhuys is dé specialist op het gebied van gezamenlijke woningfinanciering en familiehypotheken in Nederland.</p>
-                    <ul class="feature-list">
-                        <li>Persoonlijk advies op maat voor uw situatie</li>
-                        <li>Jarenlange ervaring met familiehypotheken</li>
-                        <li>Hulp bij juridische en financiële vraagstukken</li>
-                        <li>Begeleiding van aanvraag tot aan afsluiting</li>
-                    </ul>
-                    <a href="https://www.deelhuys.nl" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Bezoek Deelhuys.nl</a>
-                </div>
-                <div class="recommendation-image">
-                    <svg width="200" height="200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
-                        <path d="M12 2L12 8"></path>
-                        <circle cx="12" cy="5" r="1" fill="currentColor"></circle>
-                    </svg>
                 </div>
             </div>
         </div>
@@ -430,58 +421,125 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section section-gray">
+    <!-- Resources & References Section -->
+    <section id="bronnen" class="section">
         <div class="container">
-            <h2 class="section-title">Neem Contact Op</h2>
-            <p class="section-intro">Heeft u vragen over hypotheekdelen? Vul onderstaand formulier in en wij nemen zo spoedig mogelijk contact met u op.</p>
+            <h2 class="section-title">Nuttige Bronnen & Referenties</h2>
+            <p class="section-intro">Hier vindt u aanvullende informatie en betrouwbare bronnen over hypotheekdelen en woningfinanciering in Nederland.</p>
 
-            <div class="contact-container">
-                <form id="contactForm" class="contact-form">
-                    <div class="form-row">
-                        <div class="input-group">
-                            <label for="name">Naam *</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <h3>Overheid & Consumentenbond</h3>
+                    <ul class="resource-list">
+                        <li>
+                            <a href="https://www.rijksoverheid.nl/onderwerpen/hypotheek" target="_blank" rel="noopener noreferrer">
+                                <strong>Rijksoverheid - Hypotheek</strong>
+                                <span class="external-icon">↗</span>
+                            </a>
+                            <p>Officiële overheidsinformatie over hypotheken en regelgeving</p>
+                        </li>
+                        <li>
+                            <a href="https://www.consumentenbond.nl/hypotheek" target="_blank" rel="noopener noreferrer">
+                                <strong>Consumentenbond - Hypotheek</strong>
+                                <span class="external-icon">↗</span>
+                            </a>
+                            <p>Onafhankelijk consumentenadvies over hypotheken</p>
+                        </li>
+                        <li>
+                            <a href="https://www.nibud.nl/onderwerpen/wonen-hypotheek/" target="_blank" rel="noopener noreferrer">
+                                <strong>Nibud - Wonen & Hypotheek</strong>
+                                <span class="external-icon">↗</span>
+                            </a>
+                            <p>Budget- en financieringsadvies van het Nibud</p>
+                        </li>
+                    </ul>
+                </div>
 
-                        <div class="input-group">
-                            <label for="email">E-mailadres *</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                    </div>
+                <div class="resource-card">
+                    <h3>Hypotheekverstrekkers</h3>
+                    <ul class="resource-list">
+                        <li>
+                            <a href="https://www.nhg.nl/" target="_blank" rel="noopener noreferrer">
+                                <strong>Nationale Hypotheek Garantie (NHG)</strong>
+                                <span class="external-icon">↗</span>
+                            </a>
+                            <p>Informatie over hypotheekgarantie en voorwaarden</p>
+                        </li>
+                        <li>
+                            <a href="https://www.afm.nl/nl/consumenten/themas/product/hypotheek" target="_blank" rel="noopener noreferrer">
+                                <strong>AFM - Hypotheek</strong>
+                                <span class="external-icon">↗</span>
+                            </a>
+                            <p>Autoriteit Financiële Markten over hypotheken en rechten</p>
+                        </li>
+                        <li>
+                            <a href="https://www.verbondhypothecairs.nl/" target="_blank" rel="noopener noreferrer">
+                                <strong>Verbond van Hypothecairs</strong>
+                                <span class="external-icon">↗</span>
+                            </a>
+                            <p>Vind een gecertificeerd hypotheekadviseur</p>
+                        </li>
+                    </ul>
+                </div>
 
-                    <div class="form-row">
-                        <div class="input-group">
-                            <label for="phone">Telefoonnummer</label>
-                            <input type="tel" id="phone" name="phone">
-                        </div>
+                <div class="resource-card">
+                    <h3>Juridisch & Notarieel</h3>
+                    <ul class="resource-list">
+                        <li>
+                            <a href="https://www.notaris.nl/wonen-en-hypotheek" target="_blank" rel="noopener noreferrer">
+                                <strong>KNB - Notaris.nl</strong>
+                                <span class="external-icon">↗</span>
+                            </a>
+                            <p>Koninklijke Notariële Beroepsorganisatie over hypotheek en eigendom</p>
+                        </li>
+                        <li>
+                            <a href="https://www.kadaster.nl/" target="_blank" rel="noopener noreferrer">
+                                <strong>Kadaster</strong>
+                                <span class="external-icon">↗</span>
+                            </a>
+                            <p>Informatie over eigendomsregistratie en kadaster</p>
+                        </li>
+                        <li>
+                            <a href="https://www.juridischloket.nl/wonen-en-buren/huis-kopen/" target="_blank" rel="noopener noreferrer">
+                                <strong>Juridisch Loket - Huis Kopen</strong>
+                                <span class="external-icon">↗</span>
+                            </a>
+                            <p>Gratis juridisch advies over woningaankoop</p>
+                        </li>
+                    </ul>
+                </div>
 
-                        <div class="input-group">
-                            <label for="subject">Onderwerp</label>
-                            <select id="subject" name="subject">
-                                <option value="algemeen">Algemene vraag</option>
-                                <option value="banken">Vraag over banken</option>
-                                <option value="alternatieven">Vraag over alternatieven</option>
-                                <option value="persoonlijk">Persoonlijk advies gewenst</option>
-                            </select>
-                        </div>
-                    </div>
+                <div class="resource-card">
+                    <h3>Rekenhulpen & Tools</h3>
+                    <ul class="resource-list">
+                        <li>
+                            <a href="https://www.berekenhet.nl/wonen/maximale-hypotheek.html" target="_blank" rel="noopener noreferrer">
+                                <strong>Berekenhet.nl - Hypotheek Calculator</strong>
+                                <span class="external-icon">↗</span>
+                            </a>
+                            <p>Bereken uw maximale hypotheek en maandlasten</p>
+                        </li>
+                        <li>
+                            <a href="https://www.eigenhuis.nl/hypotheken/" target="_blank" rel="noopener noreferrer">
+                                <strong>Vereniging Eigen Huis</strong>
+                                <span class="external-icon">↗</span>
+                            </a>
+                            <p>Belangenorganisatie voor woningeigenaren met hypotheekadvies</p>
+                        </li>
+                        <li>
+                            <a href="https://www.belastingdienst.nl/wps/wcm/connect/nl/koopwoning/content/aftrekposten-eigen-woning" target="_blank" rel="noopener noreferrer">
+                                <strong>Belastingdienst - Hypotheekrenteaftrek</strong>
+                                <span class="external-icon">↗</span>
+                            </a>
+                            <p>Officiële informatie over hypotheekrenteaftrek</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
 
-                    <div class="input-group">
-                        <label for="message">Bericht *</label>
-                        <textarea id="message" name="message" rows="6" required></textarea>
-                    </div>
-
-                    <div class="input-group checkbox-group">
-                        <label>
-                            <input type="checkbox" id="privacy" name="privacy" required>
-                            Ik ga akkoord met de verwerking van mijn gegevens volgens de privacyverklaring *
-                        </label>
-                    </div>
-
-                    <button type="submit" class="btn btn-primary">Verstuur bericht</button>
-                    <div id="formMessage" class="form-message"></div>
-                </form>
+            <div class="info-box">
+                <h3>Disclaimer</h3>
+                <p>Deze website is bedoeld voor informatieve doeleinden. De verstrekte informatie is zorgvuldig samengesteld op basis van publiek beschikbare bronnen, maar kan niet worden beschouwd als professioneel financieel of juridisch advies. Voor actuele en persoonlijke informatie raden wij aan om contact op te nemen met een gecertificeerd hypotheekadviseur, notaris of financieel expert. Voorwaarden van banken en regelgeving kunnen veranderen. Laatste update: januari 2025.</p>
             </div>
         </div>
     </section>
@@ -509,8 +567,7 @@
                     <h4>Informatie</h4>
                     <ul>
                         <li><a href="#faq">Veelgestelde Vragen</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                        <li><a href="https://www.deelhuys.nl" target="_blank">Deelhuys (Partner)</a></li>
+                        <li><a href="#bronnen">Bronnen & Referenties</a></li>
                     </ul>
                 </div>
 
